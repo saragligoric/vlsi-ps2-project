@@ -1,0 +1,6 @@
+
+State Machine - |DE0_TOP|ps2:ps2_inst|state_reg
+Name state_reg.idle state_reg.done_reading state_reg.reading 
+state_reg.idle 0 0 0 
+state_reg.reading 1 0 1 
+state_reg.done_reading 1 1 0 

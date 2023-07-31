@@ -1,0 +1,1056 @@
+# vsim -c -lib work -wlf ./waveform.wlf -do "./config/run.tcl" optimized_design 
+# Start time: 21:58:47 on Jan 23,2023
+# //  Questa Sim-64
+# //  Version 10.4c win64 Jul 20 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.ps2(fast)
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.testbench(fast)
+# Loading work.ps2_if(fast__1)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.ps2_if(fast)
+# ** Warning: (vsim-3764) C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh(114): Stand-alone call to function 'write' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /uvm_pkg::uvm_analysis_imp #(testbench_sv_unit::ps2_item, testbench_sv_unit::scoreboard) File: C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# Loading C:/questasim64_10.4c/uvm-1.1d\win64\uvm_dpi.dll
+# do ./config/run.tcl
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: ./waveform.wlf
+# 
+#           File in use by: admin  Hostname: RTI_VM  ProcessID: 1836
+# 
+#           Attempting to use alternate WLF file "./wlftaqwxjr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: ./waveform.wlf
+# 
+#           Using alternate file: ./wlftaqwxjr
+# 
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.2
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               test                    -     @462 
+#   e0                       env                     -     @471 
+#     a0                     agent                   -     @483 
+#       d0                   driver                  -     @500 
+#         rsp_port           uvm_analysis_port       -     @517 
+#         seq_item_port      uvm_seq_item_pull_port  -     @508 
+#       m0                   monitor                 -     @526 
+#         mon_analysis_port  uvm_analysis_port       -     @659 
+#       s0                   uvm_sequencer           -     @534 
+#         rsp_export         uvm_analysis_export     -     @542 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @648 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     sb0                    scoreboard              -     @491 
+#       mon_analysis_imp     uvm_analysis_imp        -     @673 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../src/simulation/testbench.sv(60) @ 20: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 1/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @713                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    20                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 20: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 30: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 30: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 30: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 2/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @722                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    30                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 30: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 50: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 50: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 50: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 3/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @730                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    50                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 50: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 70: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 70: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 70: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 4/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @738                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    70                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 70: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 90: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 90: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 90: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 5/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @746                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    90                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 90: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 110: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 110: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 110: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 6/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @754                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    110                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 110: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 130: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 130: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 130: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 7/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @762                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    130                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 130: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 150: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 150: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 150: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 8/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @770                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    150                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 150: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 170: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 170: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 170: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 9/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @778                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    170                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 170: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 190: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 190: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 190: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 10/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @786                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    190                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 190: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 210: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 210: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 210: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 11/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @794                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    210                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 210: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 230: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 230: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 230: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 12/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @802                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    230                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 230: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 250: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 250: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 250: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 13/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @810                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    250                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 250: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 270: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 270: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 270: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 14/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @818                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    270                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 270: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 290: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 290: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 290: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 15/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @826                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    290                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 290: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 310: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 310: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 310: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 16/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @834                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    310                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 310: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 330: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 330: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 330: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 17/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @842                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    330                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 330: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 350: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 350: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 350: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 18/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @850                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    350                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 350: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 370: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 370: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 370: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 19/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @858                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    370                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 370: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 390: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 390: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 390: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 20/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @866                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    390                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 390: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 410: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 410: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 410: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 21/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @874                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    410                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 410: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 430: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 430: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 430: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 22/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @882                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    430                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 430: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 450: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 450: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 450: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 23/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @890                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    450                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 450: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 470: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 470: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 470: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 24/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @898                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    470                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 470: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 490: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 490: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 490: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 25/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @906                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    490                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 490: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 510: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 510: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 510: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 26/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @914                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    510                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 510: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 530: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 530: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 530: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 27/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @922                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    530                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 530: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 550: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 550: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 550: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 28/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @930                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    550                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 550: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 570: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 570: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 570: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 29/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @938                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    570                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 570: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 590: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 590: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 590: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 30/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @946                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    590                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 590: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 610: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 610: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 610: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 31/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @954                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    610                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 610: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 630: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 630: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 630: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 32/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @962                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    630                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 630: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 650: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 650: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 650: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 33/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @970                    
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    650                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 650: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 670: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 670: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 670: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 34/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @978                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    670                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 670: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 690: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 690: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 690: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 35/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @986                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    690                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 690: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 710: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 710: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 710: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 36/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @994                    
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    710                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 710: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 730: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 730: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 730: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 37/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1002                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    730                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 730: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 750: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 750: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 750: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 38/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1010                   
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    750                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 750: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 770: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 770: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 770: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 39/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1018                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    770                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 770: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 790: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 790: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 790: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 40/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1026                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    790                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 790: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 810: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 810: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 810: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 41/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1034                   
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    810                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 810: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 830: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 830: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 830: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 42/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1042                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    830                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 830: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 850: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 850: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 850: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 43/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1050                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    850                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 850: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 870: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 870: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 870: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 44/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1058                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    870                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 870: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 890: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 890: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 890: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 45/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1066                   
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    890                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 890: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 910: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 910: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 910: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 46/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1074                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    910                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 910: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 930: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 930: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 930: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 47/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1082                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    930                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 930: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 950: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 950: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 950: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 48/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1090                   
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    950                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 950: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 970: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 970: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 970: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 49/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1098                   
+#   ps2data                      integral  1     'h1                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    970                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 970: uvm_test_top.e0.a0.d0 [Driver] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 990: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 1 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 990: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO ../src/simulation/testbench.sv(71) @ 990: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 50/50 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1106                   
+#   ps2data                      integral  1     'h0                     
+#   data1                        integral  4     'h0                     
+#   data2                        integral  4     'h0                     
+#   data3                        integral  4     'h0                     
+#   data4                        integral  4     'h0                     
+#   begin_time                   time      64    990                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(139) @ 990: uvm_test_top.e0.a0.d0 [Driver] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0000 data1 = 0000
+# UVM_INFO ../src/simulation/testbench.sv(180) @ 1010: uvm_test_top.e0.a0.m0 [Monitor] ps2data = 0 data4 = 0000 data3 = 0000 data2 = 0110 data1 = 0100
+# UVM_INFO ../src/simulation/testbench.sv(272) @ 1010: uvm_test_top.e0.sb0 [Scoreboard] PASS!
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1010: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  205
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Driver]    50
+# [Generator]    50
+# [Monitor]    50
+# [Questa UVM]     2
+# [RNTST]     1
+# [Scoreboard]    50
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1010 ps  Iteration: 61  Instance: /testbench
+# End time: 21:59:07 on Jan 23,2023, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 3
